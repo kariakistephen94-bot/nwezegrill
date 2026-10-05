@@ -1,0 +1,9 @@
+'use client';
+import { useSearchParams } from 'next/navigation';
+import { useEffect,useState } from 'react';
+import Link from 'next/link';
+import { Check,ArrowUpRight,Copy } from 'lucide-react';
+import { Order } from '@/types';
+import { readOrders } from '@/lib/orders';
+import { OrderSummary } from './order-summary';
+export function Confirmation(){const params=useSearchParams();const [order,setOrder]=useState<Order|null>(null),[ready,setReady]=useState(false),[copied,setCopied]=useState(false);useEffect(()=>{setOrder(readOrders().find(o=>o.id===params.get('order'))||null);setReady(true)},[params]);if(!ready)return <p role="status">Loading your order…</p>;if(!order)return <div className="empty"><h1>No order found here.</h1><p>Orders are saved in the browser where they were placed.</p><Link className="button" href="/track">Find an order</Link></div>;return <div className="confirmation"><span className="success-mark"><Check size={35}/></span><p className="eyebrow">LOOKING GOOD, {order.customer.split(' ')[0].toUpperCase()}</p><h1>Your demo order<br/>is in<span className="gold">.</span></h1><p className="muted">Saved in this browser. Your next step is price confirmation.</p><div className="info-note">This is a demo confirmation. The restaurant has not received an order, and no payment has been taken.</div><div className="order-number"><span className="eyebrow">YOUR ORDER NUMBER</span><strong>{order.id}</strong><button className="text-button" onClick={async()=>{try{await navigator.clipboard.writeText(order.id);setCopied(true)}catch{setCopied(false)}}}><Copy size={14}/>{copied?'Copied':'Copy number'}</button></div><OrderSummary order={order}/><Link className="button full" href={`/track?order=${order.id}`}>Track demo order <ArrowUpRight size={18}/></Link><Link className="text-button full" href="/menu">Back for another look</Link></div>}

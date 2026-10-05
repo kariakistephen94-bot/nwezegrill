@@ -1,0 +1,6 @@
+'use client';
+import { useState } from 'react';
+import { Search } from 'lucide-react';
+import { products } from '@/data/products';
+import { ProductCard } from './product-card';
+export function MenuBrowser(){const [category,setCategory]=useState('All dishes'),[query,setQuery]=useState('');const shown=products.filter(p=>(category==='All dishes'||p.category===category)&&`${p.name} ${p.description}`.toLowerCase().includes(query.toLowerCase()));return <><div className="menu-toolbar"><div className="filters" role="group" aria-label="Filter menu">{['All dishes','Fish','Chicken','Sides'].map(c=><button key={c} aria-pressed={category===c} className={category===c?'selected':''} onClick={()=>setCategory(c)}>{c}</button>)}</div><label className="search"><Search size={17}/><input value={query} onChange={e=>setQuery(e.target.value)} placeholder="Find your craving" aria-label="Search menu"/></label></div><div className="product-grid menu-grid">{shown.map((p,i)=><ProductCard key={p.id} product={p} index={i}/>)}</div>{!shown.length&&<div className="empty"><h3>No dishes found.</h3><button className="text-button" onClick={()=>{setQuery('');setCategory('All dishes')}}>Show all dishes</button></div>}</>}

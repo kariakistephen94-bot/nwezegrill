@@ -1,0 +1,114 @@
+[
+  {
+    "originalFile": "1.png",
+    "suggestedName": "grilled-fish-and-chips.png",
+    "content": "Whole seasoned grilled fish on foil with chips and red sauce",
+    "websiteUse": "Hero and fish product",
+    "altText": "Whole seasoned grilled fish on foil with chips and red sauce",
+    "quality": "strong"
+  },
+  {
+    "originalFile": "2.jpg",
+    "suggestedName": "grilled-chicken-and-chips.jpg",
+    "content": "Grilled chicken portions with thick-cut chips in a takeaway tray",
+    "websiteUse": "Chicken product",
+    "altText": "Grilled chicken portions with thick-cut chips in a takeaway tray",
+    "quality": "strong"
+  },
+  {
+    "originalFile": "3.jpg",
+    "suggestedName": "fish-on-the-grill.jpg",
+    "content": "Coiled fish cooking on a grill with a person tending the food",
+    "websiteUse": "Gallery",
+    "altText": "Coiled fish cooking on a grill with a person tending the food",
+    "quality": "documentary"
+  },
+  {
+    "originalFile": "4.jpg",
+    "suggestedName": "mixed-meat-in-sauce.jpg",
+    "content": "Assorted meat and visible tripe in a rich red sauce; exact dish unverified",
+    "websiteUse": "Inventory only; dish not confirmed",
+    "altText": "Assorted meat and visible tripe in a rich red sauce; exact dish unverified",
+    "quality": "reserve"
+  },
+  {
+    "originalFile": "5.jpg",
+    "suggestedName": "smoky-grill.jpg",
+    "content": "Moody close-up of meat on a smoky grill; provenance unverified",
+    "websiteUse": "Editorial grill section; do not imply restaurant interior",
+    "altText": "Moody close-up of meat on a smoky grill; provenance unverified",
+    "quality": "strong"
+  },
+  {
+    "originalFile": "6.jpg",
+    "suggestedName": "grilled-chicken-closeup.jpg",
+    "content": "Seasoned chicken portions on a grill",
+    "websiteUse": "Gallery",
+    "altText": "Seasoned chicken portions on a grill",
+    "quality": "documentary"
+  },
+  {
+    "originalFile": "7.png",
+    "suggestedName": "grilled-fish-sharing-platter.png",
+    "content": "Large grilled fish platter with fries, onion rings, vegetables and dipping sauces",
+    "websiteUse": "Featured platter photo; no separate invented menu item",
+    "altText": "Large grilled fish platter with fries, onion rings, vegetables and dipping sauces",
+    "quality": "strong"
+  },
+  {
+    "originalFile": "8.jpg",
+    "suggestedName": "barbecue-chicken-drumsticks.jpg",
+    "content": "Glazed chicken drumsticks in a black tray",
+    "websiteUse": "Barbecue chicken product",
+    "altText": "Glazed chicken drumsticks in a black tray",
+    "quality": "strong"
+  },
+  {
+    "originalFile": "9.jpg",
+    "suggestedName": "fish-over-charcoal.jpg",
+    "content": "Coiled fish grilling over charcoal beside a road",
+    "websiteUse": "Gallery reserve",
+    "altText": "Coiled fish grilling over charcoal beside a road",
+    "quality": "documentary"
+  },
+  {
+    "originalFile": "10.jpg",
+    "suggestedName": "sauced-meat-bowl.jpg",
+    "content": "Bowl of sauced meat with spoon; exact dish not verified",
+    "websiteUse": "Inventory only; do not label as asun",
+    "altText": "Bowl of sauced meat with spoon; exact dish not verified",
+    "quality": "reserve"
+  },
+  {
+    "originalFile": "11.jpg",
+    "suggestedName": "charcoal-grilled-fish-closeup.jpg",
+    "content": "Close view of coiled fish on charcoal grill with visible camera watermark",
+    "websiteUse": "Gallery reserve",
+    "altText": "Close view of coiled fish on charcoal grill with visible camera watermark",
+    "quality": "documentary"
+  },
+  {
+    "originalFile": "12.jpg",
+    "suggestedName": "chicken-on-outdoor-grill.jpg",
+    "content": "Chicken portions cooking on an outdoor grill",
+    "websiteUse": "Gallery",
+    "altText": "Chicken portions cooking on an outdoor grill",
+    "quality": "documentary"
+  },
+  {
+    "originalFile": "13.jpg",
+    "suggestedName": "french-fries-collage.jpg",
+    "content": "Four-photo collage of seasoned fries",
+    "websiteUse": "French fries product; use one quadrant crop",
+    "altText": "Four-photo collage of seasoned fries",
+    "quality": "secondary"
+  },
+  {
+    "originalFile": "logo.png",
+    "suggestedName": "nweze-grill-spot-logo.png",
+    "content": "Gold Nweze Grill Spot crest with orange flames on black",
+    "websiteUse": "Navigation and footer; charcoal gold and ember brand palette",
+    "altText": "Gold Nweze Grill Spot crest with orange flames on black",
+    "quality": "brand"
+  }
+]

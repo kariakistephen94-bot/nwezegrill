@@ -1,0 +1,4 @@
+import Image from 'next/image';
+import { Order } from '@/types';
+import { products,imagePath } from '@/data/products';
+export function OrderSummary({order}:{order:Order}){return <div className="saved-order"><h3>The good stuff</h3>{order.items.map((i,n)=>{const p=products.find(p=>p.id===i.productId)!;return <div key={n} className="saved-order-item"><Image src={imagePath(p.image)} alt={p.alt} width={58} height={62}/><div><strong>{p.name}</strong><p className="small muted">Quantity {i.quantity}{i.notes?` · ${i.notes}`:''}</p></div><span>To be priced</span></div>})}<div className="saved-order-bottom"><span>{order.fulfillment==='delivery'?'Delivery':'Pickup'}</span><strong>Price to be confirmed</strong></div><p className="muted small">{order.address}</p>{order.notes&&<p className="muted small">Notes: {order.notes}</p>}</div>}

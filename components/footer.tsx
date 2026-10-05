@@ -1,0 +1,4 @@
+import Link from 'next/link';
+import { ArrowUpRight,Flame } from 'lucide-react';
+import { business } from '@/data/products';
+export function Footer(){return <footer><div className="footer-main wrap"><div><Link className="footer-brand" href="/"><Flame size={25}/> NWEZE GRILL SPOT</Link><p className="muted">Good food. Good company. Alapere.</p></div><div><span className="eyebrow">COME HUNGRY</span><Link href="/menu">Explore the menu</Link><Link href="/track">Track your order</Link></div><div><span className="eyebrow">FIND THE FIRE</span><p>51 Doyin Omololu St, Alapere, Lagos</p><a href={`tel:${business.tel}`}>{business.phone} <ArrowUpRight size={13}/></a></div></div><div className="footer-bottom wrap"><span>© {new Date().getFullYear()} Nweze Grill Spot.</span><span>Women-owned. Lagos-loved.</span><span>Delivery · Takeaway · Dine-in</span></div></footer>}
