@@ -650,6 +650,7 @@ h3 {
   border-top: 1px solid var(--border);
 }
 .product-bottom span { font-size: 0.75rem; color: var(--muted); }
+.product-bottom .product-price { font-size: 0.95rem; font-weight: 700; color: var(--amber); letter-spacing: -0.01em; }
 .product-bottom button {
   display: flex;
   align-items: center;
@@ -1024,6 +1025,8 @@ footer {
 .detail-copy .eyebrow { margin-bottom: 0; }
 .detail-copy h2 { font-size: 1.5rem; }
 .detail-copy .muted { font-size: 0.85rem; }
+.detail-price-row { display: flex; align-items: baseline; gap: 0.75rem; flex-wrap: wrap; }
+.detail-price { font-size: 1.35rem; font-weight: 700; color: var(--amber); letter-spacing: -0.01em; }
 .price-note { font-size: 0.75rem; color: var(--muted); }
 .detail-copy label { font-size: 0.82rem; font-weight: 600; display: flex; flex-direction: column; gap: 0.4rem; }
 .detail-copy textarea {
@@ -1054,6 +1057,7 @@ footer {
 .cart-item img { border-radius: var(--radius); object-fit: cover; flex-shrink: 0; }
 .cart-item-info { flex: 1; display: flex; flex-direction: column; gap: 0.35rem; }
 .cart-item-info h3 { font-size: 0.9rem; }
+.cart-item-price { font-size: 0.84rem; font-weight: 600; color: var(--amber); }
 .item-note { font-style: italic; color: var(--muted); font-size: 0.78rem; }
 
 .quantity {
@@ -1505,7 +1509,10 @@ footer {
 .saved-order-item img { border-radius: var(--radius); object-fit: cover; flex-shrink: 0; }
 .saved-order-item div { flex: 1; }
 .saved-order-item strong { display: block; font-size: 0.88rem; }
+.saved-order-item > strong { color: var(--amber); font-size: 0.85rem; font-weight: 700; white-space: nowrap; }
 .saved-order-item span { color: var(--muted); font-size: 0.78rem; white-space: nowrap; }
+.saved-order-breakdown { padding-block: 0.4rem; border-top: 1px solid var(--border); display: flex; flex-direction: column; gap: 0.25rem; }
+.saved-order-row { display: flex; justify-content: space-between; font-size: 0.82rem; color: var(--muted); }
 .saved-order-bottom {
   display: flex;
   justify-content: space-between;
